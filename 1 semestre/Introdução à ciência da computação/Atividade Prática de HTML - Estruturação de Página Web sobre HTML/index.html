@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #e74c3c;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            color: #8e44ad;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tfoot {
+            background-color: #e8f4fd;
+            font-weight: bold;
+        }
+        
+        img {
+            max-width: 200px;
+            height: auto;
+            margin: 10px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+        }
+        
+        p {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        
+        ul, ol {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        div {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+        } </style>
+    <title>HTML - Introdução à Computação</title>
+</head>
+<body>
+    <h1>HTML - HyperText Markup Language </h1>
+
+    <p><b>Introdução à computação </b> - Fundamentos de HTML</p>
+
+    <h2>O que é HTML?</h2>
+
+    <p>HTML (HyperText Markup Language) é uma linguagem de marcação usada para criar páginas web. Foi criada por Tim Berners-Lee em 1990 e é a base de toda as páginas da internet. HTML não é ua linguagem de programação, mas uma linguagem de mamrcação que estrutura conteúdo usando elementos e tags.</p>
+
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png" alt="Logo HTML5" title="HTML5 - Versão atual da linguagem de marcação">
+        <img src="https://amt-it.com/wp-content/uploads/2020/09/Tim-Barners-Lee.jpg" alt="Tim Berners-Lee" title="Tim Berners-Lee - Criador da World Wide Web e HTML">
+        <a href="https://www.w3.org/" target="_blank"><img src="https://www.accessibility-services.co.uk/wp-content/uploads/2018/12/w3c.png" alt="W3C Logo" title="W3C - Organização que desenvolve padrões para a Web"></a>
+    </div>
+
+    <h2>Estrutura básica do HTML</h2>
+
+    <p>Todo documento HTML possui uma estrutura padrão que deve ser seguida. A estrutura começa com a declaração DOCTYPE, seguida pelos elementos html, head e body. Cada parte tem uma função específica na organização do conteúdo da página.</p>
+
+    <h3>Exemplo de Estrutura HTML</h3>
+
+    <p>
+    &lt;!DOCTYPE html&gt;<br>
+    &lt;html lang="pt-br"&gt;<br>
+    &lt;head&gt;<br>
+    &lt;meta charset="UTF-8"&gt;<br>
+    &lt;title&gt;Minha Página&lt/title&gt;<br>
+    &lt;/head&gt;<br>
+    &lt;body&gt;<br>
+    &lt;h1&gt;Título Principal&lt;/h1&gt;<br>
+    &lt;p&gt;Este é um parágrafo&lt;/p&gt;<br>
+    &lt;/body&gt;<br>
+    &lt;/html&gt;
+    </p>
+
+    <h2>Principais Tags HTML</h2>
+
+    <div>
+        <a href="https://www.w3schools.com/tags/" target="_blank"><img src="https://strobecorp.com/wp-content/uploads/2023/08/html-tags-full-list.jpg" alt="Tags escritas em bloco de papel" title="Referência completa de tags HTML"></a>
+        <img src="https://www.dreamhost.com/blog/wp-content/uploads/2022/06/Learn-CSS-DreamHost-5.jpg" alt="Código HTML" title="Exemplo de código HTML estruturado">
+    </div>
+
+    <table>
+
+        <caption>Tags Fundamentais do HTML</caption>
+
+        <thead>
+        <tr>
+            <th>Tag</th>
+            <th>Função</th>
+            <th>exemplo</th>
+            <th>Tipo</th>
+        </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>&lt;html&gt;</td>
+                <td>Elemento raíz do documento</td>
+                <td>&lt;html lang="pt-br"&gt;</td>
+                <td>Container</td>
+            </tr>
+
+            <tr>
+                <td>&lt;head&gt;</td>
+                <td>Informações sobre o documento</td>
+                <td>&lt;head&gt;...&lt;/head&gt;</td>
+                <td>Metadados</td>
+            </tr>
+
+            <tr>
+                <td>&lt;body&gt;</td>
+                <td>Conteúdo visível da página</td>
+                <td>&lt;body&gt;...&lt;/body&gt;</td>
+                <td>Container</td>
+            </tr>
+
+            <tr>
+                <td>&lt;title&gt;</td>
+                <td>Título da página</td>
+                <td>&lt;title&gt;Minha página&lt;title&gt;</td>
+                <td>Metadado</td>
+            </tr>
+            
+            <tr>
+                <td>&lt;h1&gt; a &lt;h6&gt;</td>
+                <td>Títulos e subtítulos</td>
+                <td>&lt;h1&gt;Título&lt;/h1&gt;</td>
+                <td>Texto</td>
+            </tr>
+
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>Parágrafos</td>
+                <td>&lt;p&gt;Texto do parágrafo&lt;/p&gt;</td>
+                <td>Texto</td>
+            </tr>
+
+            <tr>
+                <td>&lt;br&gt;</td>
+                <td>Quebra de linha</td>
+                <td>Linha 1&lt;br&gt;Linha 2</td>
+                <td>Vazio</td>
+            </tr>
+
+            <tr>
+                <td>&lt;a&gt;</td>
+                <td>Links</td>
+                <td>&lt;a href="url"&gt;Link&lt;/a&gt;</td>
+                <td>Inline</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">HTML5 possui mais de 100 elementos diferentes</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <h2>Tags para Listas</h2>
+
+    <p>HTML oferece duas principais tipos de listas: ordenadas (numeradas) e não ordenadas (com marcadores). As listas são muito úteis para organizar informações de forma estruturada e clara.</p>
+
+    <h3>Lista Não Ordenada (ul)</h3>
+
+    <ul>
+        <li>Item com marcador circular</li>
+        <li>Outro item da lista</li>
+        <li>Terceiro item</li>
+    </ul>
+
+    <ul type="square">
+        <li>Item com marcador quadrado</li>
+        <li>Segundo item quadrado</li>
+    </ul>
+
+    <ul type="circle">
+        <li>item com marcador circular vazio</li>
+        <li>Segundo item circular</li>
+    </ul>
+
+    <h3>Lista Ordenada (ol)</h3>
+
+    <ol type="1">
+        <li>Primeiro item numarado</li>
+        <li>Segundo item numerado</li>
+        <li>Terceiro item numerado</li>
+    </ol>
+
+    <ol type="A">
+        <li>Item com letra maiúscula</li>
+        <li>Segundo item com letra</li>
+    </ol>
+    
+    <ol type="a">
+        <li>Item com letra minúscula</li>
+        <li>Segundo item minúsculo</li>
+    </ol>
+    
+    <ol type="I">
+        <li>Item com numeral romano maiúsculo</li>
+        <li>Segundo item romano</li>
+    </ol>
+
+    <ol type="i">
+        <li>Item com numeral romano minúsculo</li>
+        <li>Segundo item romano minúsculo</li>
+    </ol>
+
+    <h2>Tags para Imagens</h2>
+
+    <div>
+        <img src="https://thumbs.dreamstime.com/b/mundo-verde-9531376.jpg" alt="Exemplo de imagem" title="Exemplo de como inserir imagens em HTML">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/200px-Logo_of_YouTube_%282015-2017%29.svg.png" alt="Logo YouTube" title="YouTube - Plataforma de vídeos online">
+        <a href="https://unsplash.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/250px-Picture_icon_BLACK.svg.png?_=20180309172929" alt="Ícone de imagem" title="Ícone representando arquivos de imagem"></a>
+    </div>
+
+    <p>A tag &lt;img&gt; é usada para inserir imagens em páginas HTML. É uma tag vazia (self-closing) que requer pelo menos o atributo src (source) para especificar o caminho da imagem. O atributo alt é importante para acessibilidade e o title fornece informações adicionais.</p>
+
+    <h2>Tags para Tabelas</h2>
+
+    <p>As tabelas em HTML são criadas usando várias tags que trabalham juntas para organizar dados em linhas e colunas. A estrutura básica inclui table, tbody, tfoot, tr, th e td.</p>
+
+    <div>
+        <a href="https://www.w3schools.com/html/html_tables.asp" target="_blank"><img src="https://devhumor.com/content/uploads/images/June2016/html-table-animation.gif" alt="Animação de planilha" title="Animação de planilha"></a>
+    </div>
+
+    <h3>Exemplo de Tabela Completa</h3>
+
+    <table>
+
+        <caption>Exemplo de Uso das Tags de Tabela</caption>
+
+        <thead>
+        <tr>
+            <th>Tag</th>
+            <th>Descrição</th>
+            <th>Uso</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>&lt;table&gt;</td>
+            <td>Container principal</td>
+            <td>Envolve toda a tabela</td>
+        </tr>
+
+        <tr>
+            <td>&lt;thead&gt;</td>
+            <td>Cabeçalho da tabela</td>
+            <td>Contém os títulos das colunas</td>
+        </tr>
+        
+        <tr>
+            <td>&lt;tbody&gt;</td>
+            <td>Corpo da tabela</td>
+            <td>Contem os dados principas</td>
+        </tr>
+
+        <tr>
+            <td>&lt;tfoot&gt;</td>
+            <td>Rodapé da tabela</td>
+            <td>Totais ou informações finais</td>
+        </tr>
+
+        <tr>
+            <td>&lt;tr&gt;</td>
+            <td>Linha da tabela</td>
+            <td>Cada linha de dados</td>
+        </tr>
+
+        <tr>
+            <td>&lt;th&gt;</td>
+            <td>Célula de cabeçalho</td>
+            <td>Títulos das colunas</td>
+        </tr>
+
+        <tr>
+            <td>&lt;td&gt;</td>
+            <td>Célula de dados</td>
+            <td>Conteúdo da tabela</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan ="4">Total: 7 tags principais para tabelas</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Atributos Especiais para Tabelas</h2>
+
+    <p>As tabelas HTML possuem atributos especiais que permitem que células ocupemm mais de uma coluna ou linha. Os atributos colspan e rowspan são fundamentais para criar layouts de tabela mais complexos.</p>
+
+    <h3>Exemplo com Colspan e Rowspan</h3>
+
+    <table>
+
+        <caption>Demonstração de Colspan e Rowspan</caption>
+
+        <thead>
+            <tr>
+                <th colspan="3">Cabeçalho Principal (colpasn=3)</th>
+            </tr>
+
+            <tr>
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+                <th>Coluna 3</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Esta célula ocupa 2 linhas (rowspan=2)</td>
+                <td>Dados 1</td>
+                <td>Dados 2</td>
+            </tr>
+            
+            <tr>
+                <td>Dados 3</td>
+                <td>Dados 4</td>
+            </tr>
+
+            <tr>
+                <td>Dados 5</td>
+                <td colspan="2">Está célula ocupa 2 colunas (colspan=2)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Versões do HTML</h2>
+
+    <p>HTML passou por várias versões desde sua criação. Cada versão trouxe novos recursos e melhorias. Atualmente usamos HTML5, que é a versão mais recente e moderna da linguagem.</p>
+
+    <h3>Evolução das Versões</h3>
+
+    <ol type="I">
+        <li><b>HTML 1.0</b> (1991) - Primeira versão básica</li>
+        <li><b>HTML 2.0</b> (1995) - Primeira versão padronizada oficialmente</li>
+        <li><b>HTML 3.2</b> (1997) - Introduziu tabelas e scripts</li>
+        <li><b>HTML 4.01</b> (1999) - Separação de conteúdo e apresentação</li>
+        <li><b>XHTML 1.0</b> (2000) - HTML reformulado como XML</li>
+        <li><b>HTML5</b> (2014) - Versão atual com elementos semânticos</li>
+    </ol>
+
+    <h2>Links e Navegação</h2>
+
+    <div>
+        <a href="https://www.mozilla.org/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/960px-Firefox_logo%2C_2019.svg.png" alt="Firefox Logo" title="Mozilla Firefox - Navegador web gratuito"></a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Safari_browser_logo.svg/250px-Safari_browser_logo.svg.png" alt="Safari Logo" title="Safari - Navegador da Apple">
+        <a href="https://www.google.com/chrome/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/60px-Google_Chrome_icon_%28February_2022%29.svg.png" alt="Chrome Logo" title="Google Chrome - Navegador web mais usado"></a>
+    </div>
+
+    <p>A tag &lt;a&gt; (anchor) é usada para criar hiperlinks em html. Esta é uma das características mais importantes da web, permitindo a navegação entre diferentes páginas e recursos. Os links podem apontas para outras páginas, arquivos ou seções da mesma página.</p>
+
+    <h3>Tipos de Links</h3>
+
+    <ul>
+        <li><b>Links Externos</b> - Para outros sites (href="http://exemplo.com")</li>
+        <li><b>Links Internos</b> - Para outras páginas do mesmo site</li>
+        <li><b>Links para Emails</b> - Para abrir o cliente de email (href="mailto:")</li>
+        <li><b>Links para Seções</b> - Para partes da mesma página (href="#secao")</li>
+        <li><b>Links para Arquivos</b> - Para download de documentos</li>
+    </ul>
+
+    <h2>Recursos de Aprendizagem</h2>
+    
+    <p>Para Continuar aprendendo HTML, existem muitos recursos online gratuitos e de qualidade. É importante praticas constantemente e experimentar com difentens tags e atributos.</p>
+
+    <ul type="circle">
+        <li><a href=" https://www.w3schools.com/html/" target="_blank">W3Schools - Tutorial HTML Completo</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">MDN Web Docs - Referência HTML</a></li>
+        <li><a href="https://html.com/" target="_blank">HTML.com - Guias e Tutoriais</a></li>
+        <li><a href="https://www.codecademy.com/learn/learn-html" target="_blank">Codecademy - Curso Interativo HTML</a></li>
+        <li><a href="https://validator.w3.org/" target="_blank">W3C Validator - Validador de HTML</a></li>
+    </ul>
+
+    <p><i>"HTML é a linguagem universal da web. Dominar seus fundamentos é o primeiro passo para criar conteúdo online."</i><br>
+    <br>
+    HTML é a base de toda página web e compreender suas tags, atributos e estrutura é essencial para qualquer pessoa que queira trabalhar com desenvolvimento web ou simplesmente entender como a internet funciona.
+    </p>
+
+    <p>Integrantes: Kauê</p>
+    
+</body>
+</html>
